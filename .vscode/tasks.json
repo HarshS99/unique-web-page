@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open in Browser",
+            "type": "process",
+            "command": "${command:open.fileInBrowser}",
+            "args": [
+                "${workspaceFolder}/index.html"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "detail": "Opens index.html in the default web browser upon folder opening."
+        }
+    ]
+}

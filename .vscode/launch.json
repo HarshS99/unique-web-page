@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch index.html in Chrome",
+            "file": "${workspaceFolder}/index.html",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "runtimeArgs": [
+                "--disable-web-security" // Important for local file access scenarios, though generally not recommended for production.
+            ],
+            "preLaunchTask": "Open in Browser" // Referencing the task defined in tasks.json to open the file
+        }
+    ]
+}
